@@ -1,0 +1,200 @@
+@import url(chillax.css);
+
+* {
+  font-family: "Chillax", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containerContact {
+  position: relative;
+}
+
+.contactBox {
+  position: absolute;
+  top: 10rem;
+  left: 4rem;
+  max-width: 470px;
+  margin: 0 auto;
+  background-color: #FFF;
+  border-radius: 4px;
+  padding: 24px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.containerBox {
+  margin: 180px 0;
+}
+
+.containerForm {
+  max-width: 670px;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 24px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.boxRow {
+  display: flex;
+}
+
+.rowContent {
+  padding: 20px;
+
+  h3 {
+    color: #000;
+  }
+}
+
+.rowContentFlex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.input {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  width: 100%;
+  padding: 16px;
+  margin: 12px 0;
+  color: #565656;
+  border-radius: 20px;
+  border: 1px solid #565656;
+}
+
+.textInput {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  width: 100%;
+  padding: 16px;
+  margin: 12px 0;
+  color: #565656;
+  border-radius: 20px;
+  border: 1px solid #565656;
+}
+
+.formHeader {
+  display: flex;
+  justify-content: center;
+  font-size: 27px;
+  padding-bottom: 45px;
+
+  h3 {
+    border-bottom: 2px solid #0ca678;
+    margin: 0;
+  }
+}
+
+.submitInput {
+  margin: 40px auto 0 auto;
+  width: 100%;
+}
+
+.submitBtn {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  color: #ffff;
+  background-color: #0ca678;
+  font-size: inherit;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 16px 0;
+  width: 100%;
+  border: 0;
+  margin: 26px 0;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 350ms ease-in;
+}
+
+.submitBtn:hover {
+  box-shadow: none;
+}
+
+.fnlNameInput {
+  display: flex;
+  justify-content: space-between;
+
+  .input {
+    width: 300px;
+  }
+}
+
+/* responsiveness */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    display: block;
+    padding: 20px;
+  }
+
+  .logo-footer-left {
+    display: none;
+  }
+
+  .footer-right {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .list-footer {
+    display: block;
+  }
+
+  .rightlist-footer {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+  .fnlNameInput {
+    display: block;
+
+    .input {
+      width: 100%;
+    }
+  }
+
+  .contactBox {
+    position: relative;
+    left: 0;
+    top: 3rem;
+  }
+  .iframe {
+    height: 250px;
+  }
+  .containerForm {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .footer-container p .list-footer li,
+  #copyright p {
+    font-size: 11px;
+  }
+
+  .list-footer h1 {
+    font-size: 14px;
+  }
+
+  .containerForm {
+    max-width: 80%;
+  }
+
+  .divLoginBtn {
+    text-align: center;
+  }
+  .boxRow {
+    display: block;
+  }
+  .contactBox {
+    max-width: 80%;
+  }
+}

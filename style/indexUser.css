@@ -1,0 +1,29 @@
+.med-rel-prod-slider{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.related-prod-detail{
+    border: 1px solid #0CA678;
+    border-radius: 3px;
+}
+
+.related-prod-detail a{
+    color: #0CA678;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.related-prod-detail:hover{
+    background-color: #0CA678;
+}
+
+.related-prod-detail a:hover{
+    color: white;
+}
+
+.med-product-card{
+    display: flex;
+    flex-direction: column;
+}

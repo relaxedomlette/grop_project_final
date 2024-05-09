@@ -1,0 +1,868 @@
+@import url(chillax.css);
+
+* {
+  font-family: "Chillax", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.left {
+  margin-left: 20px;
+  text-align: center;
+}
+
+.right {
+  margin-right: 50px;
+}
+.title {
+  font-size: 4.4rem;
+  font-weight: 700;
+}
+
+.bkgr {
+  height: 30vh;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+}
+.hero {
+  color: white;
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  padding: 10px;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  justify-content: space-around;
+  height: 30vh;
+}
+
+.banner {
+  height: 110%;
+}
+
+.nav-icon {
+  width: 2rem;
+}
+
+.navbar {
+  box-shadow: rgba(30, 30, 34, 0.089) 0px 4px 15px 0px;
+}
+
+.submitInput {
+  display: block;
+  width: 300px;
+  text-decoration: none;
+}
+
+.submitBtn {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  color: #ffff;
+  background-color: #0ca678;
+  font-size: 1.2rem;
+  border-radius: 100px;
+  padding: 16px 0px;
+  width: 300px;
+  border: 0;
+  margin: 26px 0;
+  outline: none;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+.submitBtn:hover {
+  background-color: #087f5b;
+}
+
+.arrow {
+  width: 20px;
+}
+
+.courses {
+  margin: 50px auto;
+}
+
+.courses-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 1%;
+}
+
+.filter {
+  width: 30%;
+}
+
+.list {
+  width: 70%;
+  background-color: rgb(230, 230, 230);
+  border-radius: 0.8rem;
+  padding: 10px;
+  height: fit-content;
+}
+
+.course {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+}
+
+.upcoming {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.card-holder {
+  padding: 0 !important;
+  position: relative;
+  margin: 10px;
+  height: 80%;
+  width: 250px;
+  background-color: white;
+  border-radius: 0.8rem;
+}
+
+.info {
+  width: 70%;
+  padding-top: 20px;
+}
+
+.course-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.splitter {
+  width: 95%;
+  margin: 5px auto;
+  height: 3px;
+  background-color: white;
+  border-radius: 0.8rem;
+}
+
+.card-title {
+  margin: 10px;
+}
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.card-date {
+  color: rgb(68, 68, 68);
+}
+.card-duration {
+  color: rgb(68, 68, 68);
+}
+
+.card-img {
+  object-fit: cover;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  width: 100%;
+  height: 70%;
+}
+
+.card-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999px;
+  overflow: hidden;
+  border-radius: 0.8rem;
+  transition: all 100ms ease-in;
+}
+
+.card-btn:hover {
+  background-color: #02886036;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 10px 0px;
+}
+
+.courses-btn {
+  display: flex;
+  justify-content: space-around;
+  color: #0ca678;
+  background-color: #ffffff;
+  border: 2px solid #0ca678;
+  font-size: 1.2rem;
+  border-radius: 100px;
+  padding: 16px 0px;
+  width: 300px;
+  margin: 26px 0;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+.courses-btn:hover {
+  color: white;
+  background-color: #0ca678;
+}
+
+.container-courses {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 10px 0px;
+}
+
+.rating-outer {
+  margin-bottom: 20px;
+  height: 20px;
+  width: 100px;
+  position: relative;
+}
+
+.rating-inner {
+  position: absolute;
+  background-color: #f99746;
+  top: 0;
+  left: 0;
+  height: 20px;
+  z-index: 20;
+}
+
+.rating {
+  position: absolute;
+  top: o;
+  left: 0;
+  width: 100%;
+  z-index: 30;
+}
+
+.subjects {
+  margin-left: 5px;
+  margin-top: 20px;
+}
+
+.universities {
+  margin-left: 5px;
+}
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: #f99746;
+  border: none;
+  border-radius: 5rem;
+  margin: 5px;
+}
+
+.btn-primary:hover {
+  background-color: #d15e00 !important;
+}
+
+.selected {
+  background-color: #d15e00 !important;
+}
+------------------------------------------------------------------------------------------------------------------------------------------
+/* footer  */
+footer {
+  background-color: #099268;
+  color: white;
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: center;
+  padding: 80px;
+  background-color: #099268;
+  color: white;
+}
+.logo-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.logo-footer-left {
+  display: flex;
+  width: 300px;
+  border-width: 2px;
+  padding-right: 40px;
+  margin-bottom: 40px;
+}
+.logo-footer-left img {
+  width: 100%;
+  height: 125px;
+  object-fit: contain;
+}
+.contact-footer {
+  font-size: 19px;
+}
+.footer-right {
+  margin-bottom: 10px;
+  margin-left: 60px;
+  font-size: 19px;
+}
+.list-footer {
+  display: flex;
+  padding-top: 96px;
+}
+.list-footer h1,
+.list-footer h2 {
+  font-size: 21px;
+  color: #f99746;
+  padding-bottom: 10px;
+}
+.leftlist-footer {
+  width: 100%;
+}
+.rightlist-footer {
+  margin-left: 80px;
+  width: 100%;
+}
+.footerSocials {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  li {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}
+/* copyright */
+#copyright {
+  background-color: #087f5b;
+  color: rgb(255, 255, 255, 0.32);
+  text-align: center;
+  font-size: 19px;
+  padding: 30px;
+}
+/* responsiveness */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    display: block;
+    padding: 20px;
+  }
+  .logo-footer-left {
+    display: none;
+  }
+  .footer-right {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .list-footer {
+    display: block;
+  }
+  .rightlist-footer {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .footer-container p,
+  .list-footer li,
+  #copyright p {
+    font-size: 11px;
+  }
+  .list-footer h1 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1026px) {
+  .left {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .left h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .right {
+    margin-right: 50px;
+  }
+  .title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .bkgr {
+    height: 25vh;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+  }
+  .hero {
+    color: white;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+  }
+
+  .banner {
+    height: 110%;
+  }
+  .courses {
+    margin: 25px auto;
+  }
+
+  .courses-flex {
+    display: block;
+  }
+
+  .filter {
+    width: 100%;
+  }
+
+  .list {
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    border-radius: 0.8rem;
+    padding: 10px;
+    margin: 20px auto;
+    height: fit-content;
+  }
+
+  .course {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .upcoming {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .card-holder {
+    padding: 0 !important;
+    position: relative;
+    margin: 10px;
+    height: 200px !important;
+    width: 300px !important;
+
+    background-color: white;
+    border-radius: 0.8rem;
+  }
+
+  .info {
+    width: 100%;
+    padding: 20px 10px 5px 10px;
+  }
+
+  .course-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px !important;
+  }
+
+  .splitter {
+    width: 95%;
+    margin: 5px auto;
+    height: 3px;
+    background-color: white;
+    border-radius: 0.8rem;
+  }
+
+  .card-title {
+    margin: 10px;
+  }
+  .card-info {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .card-date {
+    color: rgb(68, 68, 68);
+  }
+  .card-duration {
+    color: rgb(68, 68, 68);
+  }
+
+  .card-img {
+    object-fit: cover;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    width: 100%;
+    height: 70%;
+  }
+
+  .card-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-radius: 0.8rem;
+    transition: all 100ms ease-in;
+  }
+
+  .container-courses {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 10px 0px;
+  }
+  .subjects {
+    margin-left: 5px;
+    margin-top: 20px;
+  }
+
+  .universities {
+    margin-left: 5px;
+  }
+  .btn-primary,
+  .btn-primary:active,
+  .btn-primary:visited {
+    background-color: #f99746;
+    border: none;
+    border-radius: 5rem;
+    margin: 5px;
+  }
+
+  .btn-primary:hover {
+    background-color: #d15e00 !important;
+  }
+
+  .selected {
+    background-color: #d15e00 !important;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .left {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .left h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .right {
+    margin-right: 50px;
+  }
+  .title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .bkgr {
+    height: 25vh;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+  }
+  .hero {
+    color: white;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+  }
+
+  .banner {
+    height: 110%;
+  }
+  .courses {
+    margin: 25px auto;
+  }
+
+  .courses-flex {
+    display: block;
+  }
+
+  .filter {
+    width: 100%;
+  }
+
+  .list {
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    border-radius: 0.8rem;
+    padding: 10px;
+    margin: 20px auto;
+    height: fit-content;
+  }
+
+  .course {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .upcoming {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .card-holder {
+    padding: 0 !important;
+    position: relative;
+    margin: 10px;
+    height: 200px !important;
+    background-color: white;
+    border-radius: 0.8rem;
+  }
+
+  .info {
+    width: 100%;
+    padding: 20px 10px 5px 10px;
+  }
+
+  .course-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+  }
+
+  .splitter {
+    width: 95%;
+    margin: 5px auto;
+    height: 3px;
+    background-color: white;
+    border-radius: 0.8rem;
+  }
+
+  .card-title {
+    margin: 10px;
+  }
+  .card-info {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .card-date {
+    color: rgb(68, 68, 68);
+  }
+  .card-duration {
+    color: rgb(68, 68, 68);
+  }
+
+  .card-img {
+    object-fit: cover;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    width: 100%;
+    height: 70%;
+  }
+
+  .card-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-radius: 0.8rem;
+    transition: all 100ms ease-in;
+  }
+
+  .container-courses {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 10px 0px;
+  }
+  .subjects {
+    margin-left: 5px;
+    margin-top: 20px;
+  }
+
+  .universities {
+    margin-left: 5px;
+  }
+  .btn-primary,
+  .btn-primary:active,
+  .btn-primary:visited {
+    background-color: #f99746;
+    border: none;
+    border-radius: 5rem;
+    margin: 5px;
+  }
+
+  .btn-primary:hover {
+    background-color: #d15e00 !important;
+  }
+
+  .selected {
+    background-color: #d15e00 !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .left {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .left h5 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .right {
+    margin-right: 50px;
+  }
+  .title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .bkgr {
+    height: 35vh;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+  }
+  .hero {
+    color: white;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+  }
+
+  .banner {
+    height: 110%;
+  }
+  .courses {
+    margin: 25px auto;
+  }
+
+  .courses-flex {
+    display: block;
+  }
+
+  .filter {
+    width: 100%;
+  }
+
+  .list {
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    border-radius: 0.8rem;
+    padding: 10px;
+    margin: 20px auto;
+    height: fit-content;
+  }
+
+  .course {
+    display: block;
+    height: auto;
+  }
+
+  .upcoming {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .card-holder {
+    padding: 0 !important;
+    position: relative;
+    margin: 10px;
+    height: 150px !important;
+    width: 200px !important;
+    background-color: white;
+    border-radius: 0.8rem;
+  }
+
+  .info {
+    width: 100%;
+    padding: 20px 10px 5px 10px;
+  }
+
+  .course-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .splitter {
+    width: 95%;
+    margin: 5px auto;
+    height: 3px;
+    background-color: white;
+    border-radius: 0.8rem;
+  }
+
+  .card-title {
+    margin: 10px;
+  }
+  .card-info {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .card-date {
+    color: rgb(68, 68, 68);
+  }
+  .card-duration {
+    color: rgb(68, 68, 68);
+  }
+
+  .card-img {
+    object-fit: cover;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    width: 100%;
+    height: 70%;
+  }
+
+  .card-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-radius: 0.8rem;
+    transition: all 100ms ease-in;
+  }
+
+  .container-courses {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 10px 0px;
+  }
+  .subjects {
+    margin-left: 5px;
+    margin-top: 20px;
+  }
+
+  .universities {
+    margin-left: 5px;
+  }
+  .btn-primary,
+  .btn-primary:active,
+  .btn-primary:visited {
+    background-color: #f99746;
+    border: none;
+    border-radius: 5rem;
+    margin: 5px;
+  }
+
+  .btn-primary:hover {
+    background-color: #d15e00 !important;
+  }
+
+  .selected {
+    background-color: #d15e00 !important;
+  }
+}

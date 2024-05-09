@@ -1,0 +1,412 @@
+@import url(chillax.css);
+
+* {
+  font-family: "Chillax", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bkgr {
+  height: 33vh;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.detail {
+  color: white;
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  padding: 10px;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  justify-content: space-around;
+  height: 30vh;
+}
+
+.detailContainer {
+  width: 750px;
+  height: 620px;
+  background-color: #e9faf5;
+  border-radius: 20px;
+  padding: 40px;
+  position: relative;
+
+  h1 {
+    color: #fff;
+    font-size: 80px;
+    text-align: center;
+    background-color: #2acc9b;
+    border-radius: 20px;
+    margin: 0 0 20px 0;
+    padding: 10px;
+  }
+}
+
+.topCard {
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    display: inline;
+    border: 12px solid #099268;
+    border-radius: 20px;
+  }
+
+  .leftCard {
+    width: 350px;
+    height: 100%;
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    padding: 10px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      list-style: none;
+
+      li {
+        padding: 15px 0;
+
+        p {
+          margin: 0;
+        }
+
+        a {
+          text-decoration: none;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+.infoBox {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoContainer {
+  background-color: #f99646;
+  border-radius: 20px;
+  padding: 20px 20px 20px 70px;
+  position: relative;
+
+  .imgCard {
+    position: absolute;
+    top: 60px;
+    left: -20px;
+    background-color: #38d9a9;
+    padding: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+
+  p {
+    margin: 6px 0;
+  }
+}
+
+.detailsBtn {
+  position: absolute;
+  bottom: 80px;
+  right: -135px;
+}
+
+.btnDetails {
+  text-align: start;
+  width: 150px;
+  margin: 20px 0;
+  padding: 10px;
+  font-weight: 600;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border: none;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 350ms ease;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.btnDetails:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  width: 50%;
+  margin: 0px auto;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.tableContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0;
+}
+
+.table {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: inline-block;
+}
+
+.action {
+  text-decoration: none;
+  color: red;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-table th,
+.student-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.student-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.student-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.student-table tr:hover {
+  background-color: #ddd;
+}
+
+/* ======================================= responsiveness =================================== */
+
+@media screen and (max-width: 1026px) {
+  .detailContainer {
+    width: 550px;
+  }
+
+  .detailContainer h1 {
+    font-size: 60px;
+  }
+
+  .topCard img {
+    width: 225px;
+    height: 180px;
+  }
+
+  .topCard .leftCard {
+    width: 225px;
+  }
+
+  .topCard .leftCard ul {
+    font-size: 15px;
+  }
+
+  .infoContainer {
+    padding: 20px 20px 20px 60px;
+
+    p {
+      font-size: 12px;
+    }
+
+    .imgCard {
+      padding: 5px;
+
+      img {
+        width: 100%;
+        height: 3.5rem;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .title {
+    width: 550px;
+  }
+
+  .student-table {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .detailContainer {
+    width: 400px;
+  }
+
+  .detailContainer h1 {
+    font-size: 40px;
+  }
+
+  .topCard img {
+    width: 150px;
+    height: 130px;
+  }
+
+  .topCard .leftCard {
+    width: 150px;
+  }
+
+  .topCard .leftCard ul {
+    font-size: 12px;
+  }
+
+  .infoContainer {
+    padding: 10px 10px 10px 40px;
+
+    p {
+      font-size: 8px;
+    }
+
+    .imgCard {
+      padding: 5px;
+      top: 40px;
+      left: -25px;
+
+      img {
+        width: 100%;
+        height: 2.5rem;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .detailsBtn {
+    position: absolute;
+    bottom: 190px;
+    right: -85px;
+  }
+
+  .btnDetails {
+    width: 100px;
+  }
+
+  .title {
+    width: 400px;
+  }
+
+  .student-table {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .bkgr {
+    display: none;
+  }
+
+  .detail {
+    position: static;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .topCard {
+    display: block;
+  }
+
+  .detailContainer {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .detailContainer h1 {
+    font-size: 18px;
+  }
+
+  .topCard img {
+    display: none;
+  }
+
+  .topCard .leftCard {
+    width: 100%;
+  }
+
+  .topCard .leftCard ul {
+    font-size: 12px;
+  }
+
+  .infoBox {
+    display: block;
+
+    .infoContainer {
+      margin: 20px 0;
+
+      p {
+        font-size: 12px;
+      }
+
+      .imgCard {
+        padding: 5px;
+        top: 40px;
+        left: -25px;
+
+        img {
+          width: 100%;
+          height: 2.5rem;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+
+  .detailsBtn {
+    position: static;
+    margin-top: 40px;
+  }
+
+  .btnDetails {
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px auto;
+  }
+
+  .tableContainer {
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  .table {
+    width: 300px;
+  }
+  .title {
+    width: 70%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .student-table {
+    width: 100%;
+    width: 300px;
+  }
+
+  br {
+    display: none;
+  }
+}
